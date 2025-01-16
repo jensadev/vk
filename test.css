@@ -60,7 +60,8 @@
   --line-height: 1.5;
   --line-height-heading: 1;
 
-  --container-max-width: 64rem;
+  --container-max-width: 68rem;
+  --border-radius: .2em;
 }
 
 .roboto-body {
@@ -187,8 +188,10 @@ a {
 }
 
 .container {
-  max-width: min(100vw - var(--space-m-l), var(--container-max-width));
+  /* max-width: min(100vw - var(--space-m-l), var(--container-max-width)); */
   margin-inline: auto;
+  max-width: var(--container-max-width, 80rem);
+  padding-inline: var(--gutter);
 }
 
 .with-sidebar {
@@ -281,7 +284,7 @@ a {
 }
 
 .screamers {
-  --grid-col-breakpoint: 10rem;
+  --grid-col-breakpoint: 15rem;
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
@@ -300,4 +303,12 @@ a {
   span {
     color: var(--colorPink);
   }
+}
+
+.button {
+  color: var(--color-light);
+  background-color: var(--colorPrimary);
+  padding: var(--space-xs);
+  border-radius: var(--border-radius);
+  font-size: var(--step-0);
 }
