@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Hem - Västerbottens kuriren</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="test.css">
 </head>
-<body>
+
+<body class="roboto-body">
   <header class="site-head">
     <nav class="site-nav">
       <ul class="nav-list">
@@ -19,25 +28,61 @@
       <li><a class="button" href="#">Prenumerera</a></li>
     </ul>
   </header>
-  <main>
+  <main class="region flow">
     <header class="hero">
-      <h1>Västerbottens kuriren</h1>
+      <h1 class="libre-baskerville-bold region">Västerbottens kuriren</h1>
       <nav class="hero-nav">
         <ul class="nav-list">
           <li><a href="#">Lokalt</a></li>
           <li><a href="#">Sport</a></li>
+          <li><a href="#">Familjeliv</a></li>
           <li><a href="#">Affärsliv</a></li>
           <li><a href="#">Kultur</a></li>
+          <li><a href="#">Nöje</a></li>
+          <li><a href="#">Weekend</a></li>
         </ul>
       </nav>
     </header>
-    <aside class="advertising">
+    <aside class="advertising region">
+      <p>Annons</p>
       <h1>Mega ads, buy Robux today!</h1>
     </aside>
+    <div class="container screamers">
+      <div class="screamer">
+        <p><span>Nu: </span>Mille vill gå hem</p>
+      </div>
+      <div class="screamer">
+        <p><span>Nu: </span>Jens orkar några minuter till</p>
+      </div>
+      <div class="screamer">
+        <p><span>Nu: </span>Batteriet sinar, vafan Northvolt</p>
+      </div>
+    </div>
     <div class="container with-sidebar">
+      <div class="not-sidebar flow">
+        <article class="card">
+          <img class="card-image" src="https://picsum.photos/640/420" alt="Nyhetsbild">
+          <div class="card-content">
+            <h1>Nyhetig nyhet om något</h1>
+            <p><span class="card-location">Ort</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+              cupiditate aut necessitatibus sit
+              officiis cumque excepturi dolore quaerat nihil nostrum blanditiis illum saepe sapiente, dolorum fuga animi
+              nisi eos minima.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-image" src="https://picsum.photos/640/420" alt="Nyhetsbild">
+          <div class="card-content">
+            <h1>Snyggast i Västerbotten</h1>
+            <p><span class="card-location">Ort</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+              cupiditate aut necessitatibus sit
+              officiis cumque.</p>
+          </div>
+        </article>
+      </div>
       <aside class="sidebar">
         <h1>Senaste nytt</h1>
-        <ul class="sdeibar-list">
+        <ul class="sidebar-list flow">
           <li>
             <time datetime="">20:00</time>
             <a href="">Det senaste nyaste</a>
@@ -100,28 +145,21 @@
           </li>
         </ul>
       </aside>
-      <div class="not-sidebar">
-        <article class="card">
-          <header class="card-header">
-            <img class="card-image" src="https://picsum.photos/400" alt="Nyhetsbild">
-            <h1>Nyhetig nyhet om något</h1>
-          </header>
-          <h2 class="card-location">Ort</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores cupiditate aut necessitatibus sit officiis cumque excepturi dolore quaerat nihil nostrum blanditiis illum saepe sapiente, dolorum fuga animi nisi eos minima.</p>
-        </article>
-      </div>
     </div>
   </main>
-  <footer class="site-foot">
-    <h1>Västerbottens kuriren</h1>
-    <ul class="footer-list">
-      <li>En del av VK media</li>
-      <li>Besöksadress</li>
-      <li>Växeln</li>
-      <li>Kundservice</li>
-      <li>Redaktion</li>
-    </ul>
-    <p>Ansvarig utgivare är en stackars sate</p>
+  <footer class="site-foot region">
+    <div class="container">
+      <h1>Västerbottens kuriren</h1>
+      <ul class="footer-list">
+        <li>En del av VK media</li>
+        <li>Besöksadress</li>
+        <li>Växeln</li>
+        <li>Kundservice</li>
+        <li>Redaktion</li>
+      </ul>
+      <p>Ansvarig utgivare är en stackars sate</p>
+    </div>
   </footer>
 </body>
+
 </html>
